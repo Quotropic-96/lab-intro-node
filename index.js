@@ -31,7 +31,9 @@ class SortedList {
     return this.items[0];
   }
 
-  sum() {}
+  sum() {
+    return this.items.reduce((acc, val) => acc += val, 0);
+  }
 
   avg() {}
 }
